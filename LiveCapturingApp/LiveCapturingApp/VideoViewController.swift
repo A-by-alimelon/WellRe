@@ -56,7 +56,8 @@ class VideoViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffe
             print("종료")
             sleep(1)
             DispatchQueue.main.async {
-                let VC = self?.storyboard?.instantiateViewController(withIdentifier: "BluetoothViewController")
+                let VC = self?.storyboard?.instantiateViewController(withIdentifier: "BluetoothViewController") as? BluetoothViewController
+                VC?.hasLabel = observation.identifier
                 self?.present(VC!, animated: true, completion: nil)
             }
             

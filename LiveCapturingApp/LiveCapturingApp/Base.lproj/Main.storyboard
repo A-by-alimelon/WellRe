@@ -73,69 +73,9 @@
                     <view key="view" contentMode="scaleToFill" id="S8b-Zf-CLr">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5C-44-4yj">
-                                <rect key="frame" x="170.66666666666666" y="110" width="49" height="46"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
-                                <state key="normal" title="버튼"/>
-                                <connections>
-                                    <action selector="touchedButton:" destination="rug-Gh-Inf" eventType="touchUpInside" id="8cL-jl-cRy"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1U9-K5-PW5">
-                                <rect key="frame" x="0.0" y="202" width="390" height="608"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="bluetoothCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bluetoothCell" rowHeight="101" id="0S6-1S-a4M" customClass="BluetoothCell" customModule="LiveCapturingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="101"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0S6-1S-a4M" id="qfU-tX-KKJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="101"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="signalLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlR-k3-Uez">
-                                                    <rect key="frame" x="24.000000000000007" y="21" width="107.66666666666669" height="26.333333333333329"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UUID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4X-4o-ugw">
-                                                    <rect key="frame" x="24" y="55" width="41" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="0.307249147" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="RlR-k3-Uez" firstAttribute="top" secondItem="qfU-tX-KKJ" secondAttribute="topMargin" constant="10" id="7CS-7g-Qxl"/>
-                                                <constraint firstItem="w4X-4o-ugw" firstAttribute="top" secondItem="RlR-k3-Uez" secondAttribute="bottom" constant="7.6699999999999999" id="aLo-EH-MhD"/>
-                                                <constraint firstItem="RlR-k3-Uez" firstAttribute="leading" secondItem="qfU-tX-KKJ" secondAttribute="leadingMargin" constant="4" id="v8n-fE-dsC"/>
-                                                <constraint firstItem="w4X-4o-ugw" firstAttribute="leading" secondItem="RlR-k3-Uez" secondAttribute="leading" id="xno-pq-0Ne"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <accessibility key="accessibilityConfiguration" identifier="bluetoothCell"/>
-                                        <connections>
-                                            <outlet property="UUIDLabel" destination="w4X-4o-ugw" id="gyv-hy-lfJ"/>
-                                            <outlet property="signalLabel" destination="RlR-k3-Uez" id="zfq-eX-nWP"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yTV-x8-0i6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="w5C-44-4yj" firstAttribute="centerX" secondItem="S8b-Zf-CLr" secondAttribute="centerX" id="7Dm-Gb-ctC"/>
-                            <constraint firstItem="yTV-x8-0i6" firstAttribute="trailing" secondItem="1U9-K5-PW5" secondAttribute="trailing" id="Dtk-rG-z7b"/>
-                            <constraint firstItem="yTV-x8-0i6" firstAttribute="bottom" secondItem="1U9-K5-PW5" secondAttribute="bottom" id="QZj-vb-epE"/>
-                            <constraint firstItem="1U9-K5-PW5" firstAttribute="leading" secondItem="yTV-x8-0i6" secondAttribute="leading" id="RLE-gQ-v5i"/>
-                            <constraint firstItem="w5C-44-4yj" firstAttribute="top" secondItem="yTV-x8-0i6" secondAttribute="top" constant="66" id="S4w-eH-aCn"/>
-                            <constraint firstItem="1U9-K5-PW5" firstAttribute="top" secondItem="w5C-44-4yj" secondAttribute="bottom" constant="46" id="YhX-85-ENZ"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="1U9-K5-PW5" id="g6z-Fz-ThY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VeO-dE-dpl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
