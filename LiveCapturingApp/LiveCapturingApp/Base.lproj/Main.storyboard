@@ -95,14 +95,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="escapingWellRe" translatesAutoresizingMaskIntoConstraints="NO" id="Fs6-kP-93E">
+                                <rect key="frame" x="75" y="289" width="240" height="267"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb6-jV-lCc">
+                                <rect key="frame" x="164.66666666666666" y="628" width="61" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="완료">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedCompleteButton:" destination="kQ0-aF-iHB" eventType="touchUpInside" id="d7W-IB-J5G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FH9-jK-uNM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rCa-4w-IV7" firstAttribute="top" secondItem="FH9-jK-uNM" secondAttribute="top" constant="120" id="Cee-ge-RBJ"/>
                             <constraint firstItem="rCa-4w-IV7" firstAttribute="centerX" secondItem="9Zg-Ed-bq8" secondAttribute="centerX" id="NQO-5N-36D"/>
+                            <constraint firstItem="hb6-jV-lCc" firstAttribute="centerX" secondItem="9Zg-Ed-bq8" secondAttribute="centerX" id="OrG-eP-DQB"/>
+                            <constraint firstItem="Fs6-kP-93E" firstAttribute="top" secondItem="rCa-4w-IV7" secondAttribute="bottom" constant="84.329999999999998" id="ZTY-VP-IA3"/>
+                            <constraint firstItem="Fs6-kP-93E" firstAttribute="leading" secondItem="FH9-jK-uNM" secondAttribute="leading" constant="75" id="a0Y-45-n6I"/>
+                            <constraint firstItem="FH9-jK-uNM" firstAttribute="trailing" secondItem="Fs6-kP-93E" secondAttribute="trailing" constant="75" id="bV9-Vr-OK3"/>
+                            <constraint firstItem="FH9-jK-uNM" firstAttribute="bottom" secondItem="Fs6-kP-93E" secondAttribute="bottom" constant="254" id="kCV-U5-JPp"/>
+                            <constraint firstItem="hb6-jV-lCc" firstAttribute="top" secondItem="Fs6-kP-93E" secondAttribute="bottom" constant="72" id="tJO-qc-qxS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="completeButton" destination="hb6-jV-lCc" id="Z34-vx-81t"/>
+                        <outlet property="wellReImageView" destination="Fs6-kP-93E" id="erU-oa-yZi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Don-3Y-jYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,13 +134,13 @@
         <!--Main View Controller-->
         <scene sceneID="64Z-Cw-UvJ">
             <objects>
-                <viewController id="JWl-5l-zKI" customClass="MainViewController" customModule="LiveCapturingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" modalPresentationStyle="fullScreen" id="JWl-5l-zKI" customClass="MainViewController" customModule="LiveCapturingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6U0-5j-CPV">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WellRe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-ag-h70">
-                                <rect key="frame" x="135.66666666666666" y="60" width="118.66666666666666" height="52"/>
+                                <rect key="frame" x="136" y="60" width="118.33333333333331" height="52"/>
                                 <fontDescription key="fontDescription" name="Alegreya-Black" family="Alegreya" pointSize="38"/>
                                 <color key="textColor" red="1" green="0.56150112539999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -153,11 +176,42 @@
             </objects>
             <point key="canvasLocation" x="-663.20000000000005" y="79.610194902548727"/>
         </scene>
+        <!--Cycle View Controller-->
+        <scene sceneID="FM4-yQ-jog">
+            <objects>
+                <viewController id="AaN-Mq-gNq" customClass="CycleViewController" customModule="LiveCapturingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Yz-gP-mbg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분리수거 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1T-LH-G3a">
+                                <rect key="frame" x="117.66666666666669" y="164" width="155" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sCh-bG-Iiy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E1T-LH-G3a" firstAttribute="centerX" secondItem="9Yz-gP-mbg" secondAttribute="centerX" id="Kpd-az-HxS"/>
+                            <constraint firstItem="E1T-LH-G3a" firstAttribute="top" secondItem="sCh-bG-Iiy" secondAttribute="top" constant="120" id="cEu-sr-ovi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y92-yG-tm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2385" y="80"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="escapingWellRe" width="1000" height="1082"/>
         <image name="wellRe" width="1011" height="1000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

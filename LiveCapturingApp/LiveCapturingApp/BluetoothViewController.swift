@@ -28,7 +28,10 @@ class BluetoothViewController: UIViewController {
             let VC = self.storyboard?.instantiateViewController(withIdentifier: "LoadingViewController")
             self.present(VC!, animated: true, completion: nil)
         }
-        checkServer()
+        else { 
+            let VC = self.storyboard?.instantiateViewController(withIdentifier: "LoadingViewController")
+            self.present(VC!, animated: true, completion: nil)
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -37,16 +40,7 @@ class BluetoothViewController: UIViewController {
         ref.child("pet").setValue(post2)
         print("done")
     }
-    
-    func checkServer() {
-        ref.child("end").observe(DataEventType.value) { (snapshot) in
-            let value = snapshot.value
-            print(value as! String)
-            if value as! String == "finish" {
-                self.dismiss(animated: true, completion: nil)
-            }
-        }
-    }
+  
   
 }
 

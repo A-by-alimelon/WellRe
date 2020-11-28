@@ -7,18 +7,28 @@
 
 import UIKit
 import Firebase
+import AudioToolbox
 
 class LoadingViewController: UIViewController {
   
+    @IBOutlet weak var wellReImageView: UIImageView!
+    
+    @IBOutlet weak var completeButton: UIButton!
     private var loadingView: LoadingView?
     let ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        wellReImageView.isHidden = true
+        completeButton.isHidden = true
         setLoadingView()
         checkServer()
         
+    }
+    
+    @IBAction func touchedCompleteButton(_ sender: UIButton) {
+        let VC = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController")
+        self.present(VC!, animated: true, completion: nil)
     }
     
     func setLoadingView() {
@@ -37,7 +47,10 @@ class LoadingViewController: UIViewController {
             let value = snapshot.value
             print(value as! String)
             if value as! String == "finish" {
-                self.dismiss(animated: true, completion: nil)
+                self.loadingView?.isHidden = true
+                AudioServicesPlaySystemSound(1015)
+                self.wellReImageView.isHidden = false
+                self.completeButton.isHidden = false
             }
         }
     }

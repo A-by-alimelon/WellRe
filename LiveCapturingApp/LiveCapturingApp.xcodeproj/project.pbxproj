@@ -29,6 +29,7 @@
 		FA8504E7253B18BA009CF01C /* Alegreya-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA8504E6253B18BA009CF01C /* Alegreya-Black.ttf */; };
 		FA8504EC253B2175009CF01C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8504EB253B2175009CF01C /* MainViewController.swift */; };
 		FA96E4B2254E79B7006F3D01 /* ParticlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */; };
+		FA99AE2F257281C400B08B48 /* CycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AE2E257281C400B08B48 /* CycleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		FA8504E6253B18BA009CF01C /* Alegreya-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Black.ttf"; sourceTree = "<group>"; };
 		FA8504EB253B2175009CF01C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePeripheral.swift; sourceTree = "<group>"; };
+		FA99AE2E257281C400B08B48 /* CycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				FA36DD4F2528595300205F6D /* VideoViewController.swift */,
 				FA7E71B82540321F00620A10 /* ClassificationManager.swift */,
 				FA36DD512528595300205F6D /* Main.storyboard */,
+				FA99AE2E257281C400B08B48 /* CycleViewController.swift */,
 				FA84D58D2572353400ECDD44 /* LoadingViewController.swift */,
 				FA54966125724F06007F5802 /* LoadingView */,
 				FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */,
@@ -469,6 +472,7 @@
 				FA36DD502528595300205F6D /* VideoViewController.swift in Sources */,
 				FA36DD4C2528595300205F6D /* AppDelegate.swift in Sources */,
 				FA36DD4E2528595300205F6D /* SceneDelegate.swift in Sources */,
+				FA99AE2F257281C400B08B48 /* CycleViewController.swift in Sources */,
 				FA96E4B2254E79B7006F3D01 /* ParticlePeripheral.swift in Sources */,
 				FA54965D25724F03007F5802 /* LoadingView.swift in Sources */,
 				FA7E71B92540321F00620A10 /* ClassificationManager.swift in Sources */,
