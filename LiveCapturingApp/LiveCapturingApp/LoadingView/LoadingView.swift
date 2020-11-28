@@ -8,18 +8,20 @@
 import UIKit
 
 class LoadingView: UIView {
-
+    
     @IBOutlet weak var omgImageView: UIImageView!
-     @IBOutlet weak var petImageView: UIImageView!
+    @IBOutlet weak var petImageView: UIImageView!
     @IBOutlet weak var labelImageView: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         initXIB()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        
         initXIB()
     }
     
@@ -32,10 +34,33 @@ class LoadingView: UIView {
     }
     
     func startAnimation() {
-        let originalTransform = self.transform
-        let translatedTransform = originalTransform.translatedBy(x: 30.0, y: 0.0)
-        UIView.animate(withDuration: 0.8, delay: 0.2, options: [.repeat, .autoreverse], animations: {
-            self.transform = translatedTransform
-        })
+        let originTransform = self.labelImageView.transform
+        let translatedTransform = originTransform.translatedBy(x: 120.0, y: 0)
+        self.labelImageView.transform = translatedTransform
+        
+        UIView.animate(withDuration: 2.0, delay: 0.2) {
+            self.labelImageView.transform = originTransform
+        } completion: { (_) in
+            UIView.animate(withDuration: 2.0) {
+                self.labelImageView.transform = translatedTransform
+            } completion: { (_) in
+                UIView.animate(withDuration: 2.0) {
+                    self.labelImageView.transform = originTransform
+                } completion: { (_) in
+                    UIView.animate(withDuration: 2.0) {
+                        self.labelImageView.transform = translatedTransform
+                    }
+                    completion: { (_) in
+                        UIView.animate(withDuration: 2.0) {
+                            self.labelImageView.transform = originTransform
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
+        
     }
 }

@@ -19,17 +19,16 @@
 		FA36DD582528595500205F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36DD562528595500205F6D /* LaunchScreen.storyboard */; };
 		FA36DD632528595500205F6D /* LiveCapturingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36DD622528595500205F6D /* LiveCapturingAppTests.swift */; };
 		FA36DD6E2528595500205F6D /* LiveCapturingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36DD6D2528595500205F6D /* LiveCapturingAppUITests.swift */; };
+		FA54965825724EF2007F5802 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA54965725724EF2007F5802 /* LoadingView.xib */; };
+		FA54965D25724F03007F5802 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54965C25724F03007F5802 /* LoadingView.swift */; };
 		FA6D6A6625455D0500EB4B49 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D6A6525455D0500EB4B49 /* BluetoothViewController.swift */; };
 		FA7E71B425402E8E00620A10 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E71B325402E8E00620A10 /* CaptureSession.swift */; };
 		FA7E71B92540321F00620A10 /* ClassificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E71B82540321F00620A10 /* ClassificationManager.swift */; };
-		FA84D580257223F700ECDD44 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA84D57F257223F700ECDD44 /* LoadingView.xib */; };
-		FA84D5852572241500ECDD44 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84D5842572241500ECDD44 /* LoadingView.swift */; };
 		FA84D58E2572353400ECDD44 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84D58D2572353400ECDD44 /* LoadingViewController.swift */; };
 		FA8504E1253B1300009CF01C /* petClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FA8504E0253B1300009CF01C /* petClassifier.mlmodel */; };
 		FA8504E7253B18BA009CF01C /* Alegreya-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA8504E6253B18BA009CF01C /* Alegreya-Black.ttf */; };
 		FA8504EC253B2175009CF01C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8504EB253B2175009CF01C /* MainViewController.swift */; };
 		FA96E4B2254E79B7006F3D01 /* ParticlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */; };
-		FA96E4D1254EA2BB006F3D01 /* BluetoothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E4D0254EA2BB006F3D01 /* BluetoothCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,17 +73,16 @@
 		FA36DD692528595500205F6D /* LiveCapturingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCapturingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA36DD6D2528595500205F6D /* LiveCapturingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCapturingAppUITests.swift; sourceTree = "<group>"; };
 		FA36DD6F2528595500205F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA54965725724EF2007F5802 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		FA54965C25724F03007F5802 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		FA6D6A6525455D0500EB4B49 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 		FA7E71B325402E8E00620A10 /* CaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
 		FA7E71B82540321F00620A10 /* ClassificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationManager.swift; sourceTree = "<group>"; };
-		FA84D57F257223F700ECDD44 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
-		FA84D5842572241500ECDD44 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		FA84D58D2572353400ECDD44 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		FA8504E0253B1300009CF01C /* petClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = petClassifier.mlmodel; sourceTree = "<group>"; };
 		FA8504E6253B18BA009CF01C /* Alegreya-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Black.ttf"; sourceTree = "<group>"; };
 		FA8504EB253B2175009CF01C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePeripheral.swift; sourceTree = "<group>"; };
-		FA96E4D0254EA2BB006F3D01 /* BluetoothCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,13 +164,12 @@
 				FA36DD4B2528595300205F6D /* AppDelegate.swift */,
 				FA36DD4D2528595300205F6D /* SceneDelegate.swift */,
 				FA36DD4F2528595300205F6D /* VideoViewController.swift */,
-				FA96E4D0254EA2BB006F3D01 /* BluetoothCell.swift */,
 				FA7E71B82540321F00620A10 /* ClassificationManager.swift */,
 				FA36DD512528595300205F6D /* Main.storyboard */,
 				FA84D58D2572353400ECDD44 /* LoadingViewController.swift */,
+				FA54966125724F06007F5802 /* LoadingView */,
 				FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */,
 				FA6D6A6525455D0500EB4B49 /* BluetoothViewController.swift */,
-				FA84D5892572242800ECDD44 /* LoadingView */,
 				FA7E71B325402E8E00620A10 /* CaptureSession.swift */,
 				FA8504EB253B2175009CF01C /* MainViewController.swift */,
 				FA8504E5253B18AA009CF01C /* Font */,
@@ -203,11 +200,11 @@
 			path = LiveCapturingAppUITests;
 			sourceTree = "<group>";
 		};
-		FA84D5892572242800ECDD44 /* LoadingView */ = {
+		FA54966125724F06007F5802 /* LoadingView */ = {
 			isa = PBXGroup;
 			children = (
-				FA84D57F257223F700ECDD44 /* LoadingView.xib */,
-				FA84D5842572241500ECDD44 /* LoadingView.swift */,
+				FA54965725724EF2007F5802 /* LoadingView.xib */,
+				FA54965C25724F03007F5802 /* LoadingView.swift */,
 			);
 			path = LoadingView;
 			sourceTree = "<group>";
@@ -339,7 +336,7 @@
 				FA36DD582528595500205F6D /* LaunchScreen.storyboard in Resources */,
 				FA36DD552528595500205F6D /* Assets.xcassets in Resources */,
 				FA08E5CA25517C75008FBCFF /* GoogleService-Info.plist in Resources */,
-				FA84D580257223F700ECDD44 /* LoadingView.xib in Resources */,
+				FA54965825724EF2007F5802 /* LoadingView.xib in Resources */,
 				FA8504E7253B18BA009CF01C /* Alegreya-Black.ttf in Resources */,
 				FA36DD532528595300205F6D /* Main.storyboard in Resources */,
 			);
@@ -472,9 +469,8 @@
 				FA36DD502528595300205F6D /* VideoViewController.swift in Sources */,
 				FA36DD4C2528595300205F6D /* AppDelegate.swift in Sources */,
 				FA36DD4E2528595300205F6D /* SceneDelegate.swift in Sources */,
-				FA84D5852572241500ECDD44 /* LoadingView.swift in Sources */,
 				FA96E4B2254E79B7006F3D01 /* ParticlePeripheral.swift in Sources */,
-				FA96E4D1254EA2BB006F3D01 /* BluetoothCell.swift in Sources */,
+				FA54965D25724F03007F5802 /* LoadingView.swift in Sources */,
 				FA7E71B92540321F00620A10 /* ClassificationManager.swift in Sources */,
 				FA8504E1253B1300009CF01C /* petClassifier.mlmodel in Sources */,
 				FA6D6A6625455D0500EB4B49 /* BluetoothViewController.swift in Sources */,

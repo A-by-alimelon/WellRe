@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="라벨 제거 중 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-4w-IV7">
-                                <rect key="frame" x="110" y="517" width="170" height="41"/>
+                                <rect key="frame" x="110" y="164" width="170" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -99,15 +99,14 @@
                         <viewLayoutGuide key="safeArea" id="FH9-jK-uNM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rCa-4w-IV7" firstAttribute="top" secondItem="FH9-jK-uNM" secondAttribute="top" constant="120" id="Cee-ge-RBJ"/>
                             <constraint firstItem="rCa-4w-IV7" firstAttribute="centerX" secondItem="9Zg-Ed-bq8" secondAttribute="centerX" id="NQO-5N-36D"/>
-                            <constraint firstItem="FH9-jK-uNM" firstAttribute="bottom" secondItem="rCa-4w-IV7" secondAttribute="bottom" constant="252" id="SuM-T3-TlY"/>
-                            <constraint firstItem="rCa-4w-IV7" firstAttribute="top" secondItem="FH9-jK-uNM" secondAttribute="top" constant="473" id="Xvd-oK-AVN"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Don-3Y-jYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608" y="79"/>
+            <point key="canvasLocation" x="1607.6923076923076" y="78.909952606635073"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="64Z-Cw-UvJ">
