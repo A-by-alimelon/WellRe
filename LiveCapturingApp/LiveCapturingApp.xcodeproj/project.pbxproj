@@ -30,6 +30,8 @@
 		FA8504EC253B2175009CF01C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8504EB253B2175009CF01C /* MainViewController.swift */; };
 		FA96E4B2254E79B7006F3D01 /* ParticlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */; };
 		FA99AE2F257281C400B08B48 /* CycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AE2E257281C400B08B48 /* CycleViewController.swift */; };
+		FA99AE34257286EB00B08B48 /* loadingDots.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA99AE33257286EB00B08B48 /* loadingDots.xib */; };
+		FA99AE392572872300B08B48 /* LoadingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AE382572872300B08B48 /* LoadingDots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		FA8504EB253B2175009CF01C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePeripheral.swift; sourceTree = "<group>"; };
 		FA99AE2E257281C400B08B48 /* CycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleViewController.swift; sourceTree = "<group>"; };
+		FA99AE33257286EB00B08B48 /* loadingDots.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loadingDots.xib; sourceTree = "<group>"; };
+		FA99AE382572872300B08B48 /* LoadingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 				FA36DD4F2528595300205F6D /* VideoViewController.swift */,
 				FA7E71B82540321F00620A10 /* ClassificationManager.swift */,
 				FA36DD512528595300205F6D /* Main.storyboard */,
+				FA99AE33257286EB00B08B48 /* loadingDots.xib */,
+				FA99AE382572872300B08B48 /* LoadingDots.swift */,
 				FA99AE2E257281C400B08B48 /* CycleViewController.swift */,
 				FA84D58D2572353400ECDD44 /* LoadingViewController.swift */,
 				FA54966125724F06007F5802 /* LoadingView */,
@@ -337,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA36DD582528595500205F6D /* LaunchScreen.storyboard in Resources */,
+				FA99AE34257286EB00B08B48 /* loadingDots.xib in Resources */,
 				FA36DD552528595500205F6D /* Assets.xcassets in Resources */,
 				FA08E5CA25517C75008FBCFF /* GoogleService-Info.plist in Resources */,
 				FA54965825724EF2007F5802 /* LoadingView.xib in Resources */,
@@ -481,6 +488,7 @@
 				FA8504EC253B2175009CF01C /* MainViewController.swift in Sources */,
 				FA7E71B425402E8E00620A10 /* CaptureSession.swift in Sources */,
 				FA84D58E2572353400ECDD44 /* LoadingViewController.swift in Sources */,
+				FA99AE392572872300B08B48 /* LoadingDots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

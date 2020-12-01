@@ -179,7 +179,7 @@
         <!--Cycle View Controller-->
         <scene sceneID="FM4-yQ-jog">
             <objects>
-                <viewController id="AaN-Mq-gNq" customClass="CycleViewController" customModule="LiveCapturingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CycleViewController" id="AaN-Mq-gNq" customClass="CycleViewController" customModule="LiveCapturingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Yz-gP-mbg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

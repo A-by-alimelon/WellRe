@@ -18,7 +18,6 @@ class BluetoothViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let post : [String: String] = ["hasLabel": hasLabel]
-        
         ref.child("pet").setValue(post)
         
     }
@@ -29,7 +28,7 @@ class BluetoothViewController: UIViewController {
             self.present(VC!, animated: true, completion: nil)
         }
         else { 
-            let VC = self.storyboard?.instantiateViewController(withIdentifier: "LoadingViewController")
+            let VC = self.storyboard?.instantiateViewController(withIdentifier: "CycleViewController")
             self.present(VC!, animated: true, completion: nil)
         }
     }
