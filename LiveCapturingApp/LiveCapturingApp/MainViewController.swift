@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref.child("end").setValue("start")
+        ref.child("pet").setValue(["hasLabel": "default"])
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         mainImage.addGestureRecognizer(tapGestureRecognizer)
 
@@ -25,10 +26,5 @@ class MainViewController: UIViewController {
             videoViewController.modalTransitionStyle = .coverVertical
             present(videoViewController, animated: true, completion: nil)
         }
-        print("touched")
-        
     }
-
-    
-
 }

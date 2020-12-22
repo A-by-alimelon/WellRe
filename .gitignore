@@ -62,6 +62,8 @@ DerivedData/
 *.ipa
 *.dSYM.zip
 *.dSYM
+GoogleService-Info.plist
+
 
 ## Playgrounds
 timeline.xctimeline

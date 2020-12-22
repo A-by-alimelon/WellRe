@@ -26,8 +26,7 @@ final class CaptureSession: AVCaptureSession {
         guard let captureDevice = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .front
         ).devices.first else { return }
         guard let input = try? AVCaptureDeviceInput(device: captureDevice) else { return }
-        
-//        guard let device = AVCaptureDevice.default(for: .video),let input = try? AVCaptureDeviceInput(device: device) else { return }
+    
         addInput(input)
     }
     

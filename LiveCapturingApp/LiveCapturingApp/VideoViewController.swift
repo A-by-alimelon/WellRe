@@ -24,7 +24,6 @@ class VideoViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffe
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-//        configureObserver()
     }
     
     override func viewDidLayoutSubviews() {
@@ -36,7 +35,6 @@ class VideoViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffe
         super.viewDidLoad()
         configureClassification()
         session.startRunning()
-        
     }
     
     private func configureClassification() {
@@ -56,7 +54,7 @@ class VideoViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffe
             print("종료")
             sleep(1)
             DispatchQueue.main.async {
-                let VC = self?.storyboard?.instantiateViewController(withIdentifier: "BluetoothViewController") as? BluetoothViewController
+                let VC = self?.storyboard?.instantiateViewController(withIdentifier: "ControlViewController") as? ControlViewController
                 VC?.hasLabel = observation.identifier
                 self?.present(VC!, animated: true, completion: nil)
             }

@@ -21,14 +21,13 @@
 		FA36DD6E2528595500205F6D /* LiveCapturingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36DD6D2528595500205F6D /* LiveCapturingAppUITests.swift */; };
 		FA54965825724EF2007F5802 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA54965725724EF2007F5802 /* LoadingView.xib */; };
 		FA54965D25724F03007F5802 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54965C25724F03007F5802 /* LoadingView.swift */; };
-		FA6D6A6625455D0500EB4B49 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D6A6525455D0500EB4B49 /* BluetoothViewController.swift */; };
+		FA6D6A6625455D0500EB4B49 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D6A6525455D0500EB4B49 /* ControlViewController.swift */; };
 		FA7E71B425402E8E00620A10 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E71B325402E8E00620A10 /* CaptureSession.swift */; };
 		FA7E71B92540321F00620A10 /* ClassificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E71B82540321F00620A10 /* ClassificationManager.swift */; };
 		FA84D58E2572353400ECDD44 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84D58D2572353400ECDD44 /* LoadingViewController.swift */; };
 		FA8504E1253B1300009CF01C /* petClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FA8504E0253B1300009CF01C /* petClassifier.mlmodel */; };
 		FA8504E7253B18BA009CF01C /* Alegreya-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA8504E6253B18BA009CF01C /* Alegreya-Black.ttf */; };
 		FA8504EC253B2175009CF01C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8504EB253B2175009CF01C /* MainViewController.swift */; };
-		FA96E4B2254E79B7006F3D01 /* ParticlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */; };
 		FA99AE2F257281C400B08B48 /* CycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AE2E257281C400B08B48 /* CycleViewController.swift */; };
 		FA99AE34257286EB00B08B48 /* loadingDots.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA99AE33257286EB00B08B48 /* loadingDots.xib */; };
 		FA99AE392572872300B08B48 /* LoadingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AE382572872300B08B48 /* LoadingDots.swift */; };
@@ -78,14 +77,13 @@
 		FA36DD6F2528595500205F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA54965725724EF2007F5802 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		FA54965C25724F03007F5802 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		FA6D6A6525455D0500EB4B49 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		FA6D6A6525455D0500EB4B49 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		FA7E71B325402E8E00620A10 /* CaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
 		FA7E71B82540321F00620A10 /* ClassificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationManager.swift; sourceTree = "<group>"; };
 		FA84D58D2572353400ECDD44 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		FA8504E0253B1300009CF01C /* petClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = petClassifier.mlmodel; sourceTree = "<group>"; };
 		FA8504E6253B18BA009CF01C /* Alegreya-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Black.ttf"; sourceTree = "<group>"; };
 		FA8504EB253B2175009CF01C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePeripheral.swift; sourceTree = "<group>"; };
 		FA99AE2E257281C400B08B48 /* CycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleViewController.swift; sourceTree = "<group>"; };
 		FA99AE33257286EB00B08B48 /* loadingDots.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loadingDots.xib; sourceTree = "<group>"; };
 		FA99AE382572872300B08B48 /* LoadingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDots.swift; sourceTree = "<group>"; };
@@ -177,8 +175,7 @@
 				FA99AE2E257281C400B08B48 /* CycleViewController.swift */,
 				FA84D58D2572353400ECDD44 /* LoadingViewController.swift */,
 				FA54966125724F06007F5802 /* LoadingView */,
-				FA96E4B1254E79B7006F3D01 /* ParticlePeripheral.swift */,
-				FA6D6A6525455D0500EB4B49 /* BluetoothViewController.swift */,
+				FA6D6A6525455D0500EB4B49 /* ControlViewController.swift */,
 				FA7E71B325402E8E00620A10 /* CaptureSession.swift */,
 				FA8504EB253B2175009CF01C /* MainViewController.swift */,
 				FA8504E5253B18AA009CF01C /* Font */,
@@ -480,11 +477,10 @@
 				FA36DD4C2528595300205F6D /* AppDelegate.swift in Sources */,
 				FA36DD4E2528595300205F6D /* SceneDelegate.swift in Sources */,
 				FA99AE2F257281C400B08B48 /* CycleViewController.swift in Sources */,
-				FA96E4B2254E79B7006F3D01 /* ParticlePeripheral.swift in Sources */,
 				FA54965D25724F03007F5802 /* LoadingView.swift in Sources */,
 				FA7E71B92540321F00620A10 /* ClassificationManager.swift in Sources */,
 				FA8504E1253B1300009CF01C /* petClassifier.mlmodel in Sources */,
-				FA6D6A6625455D0500EB4B49 /* BluetoothViewController.swift in Sources */,
+				FA6D6A6625455D0500EB4B49 /* ControlViewController.swift in Sources */,
 				FA8504EC253B2175009CF01C /* MainViewController.swift in Sources */,
 				FA7E71B425402E8E00620A10 /* CaptureSession.swift in Sources */,
 				FA84D58E2572353400ECDD44 /* LoadingViewController.swift in Sources */,
